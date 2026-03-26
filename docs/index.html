@@ -1,12 +1,703 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>app-ads.txt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nguyen Duc Kien - Mobile Developer with 2+ years of Flutter & cross-platform experience. Published apps on App Store and Google Play.">
+  <title>Nguyen Duc Kien | Mobile Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-<pre>
-google.com, pub-2767347928638085, DIRECT, f08c47fec0942fa0
-</pre>
+
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+
+  <!-- Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">DK.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="main-container">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for opportunities
+        </div>
+        <h1>
+          Hi, I'm<br>
+          <span class="gradient-text">Nguyen Duc Kien</span>
+        </h1>
+        <p class="subtitle">Mobile Developer · Flutter Specialist</p>
+
+        <div class="hero-info">
+          <div class="hero-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Tieu Khuc - Ha Noi</span>
+          </div>
+          <div class="hero-info-item">
+            <i class="fas fa-birthday-cake"></i>
+            <span>10/06/2003</span>
+          </div>
+          <div class="hero-info-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+84368665035">+84 368 665 035</a>
+          </div>
+          <div class="hero-info-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:nguyenkiendy2003@gmail.com">nguyenkiendy2003@gmail.com</a>
+          </div>
+          <div class="hero-info-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/DuckienDev" target="_blank">github.com/DuckienDev</a>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="mailto:nguyenkiendy2003@gmail.com" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+          <a href="https://github.com/DuckienDev" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="avatar-wrapper">
+          <img src="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/653404852_1673594027321245_8328803191874660835_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeGJuYubeGAXZ_cTvBtXUZfgoJSsehxaJWSglKx6HFolZNGv3tJm-BEqb5eIBeSBZ36ucxb0qDklRsYu0JQ33kmZ&_nc_ohc=wUE9ZAf74H0Q7kNvwGhyGSt&_nc_oc=Adrrs6LPTBCLdIX-hFlwwyKAfQPwrXikE1x8CDMPzRU-05ylb81WpglBG-sooKb8a0_VtJS49iF2q8iYLWdMdspg&_nc_zt=23&_nc_ht=scontent.fhan2-5.fna&_nc_gid=hHTfzW1lf0q0w1g3Pp_a2A&_nc_ss=7a32e&oh=00_AfwZT_3lj__XH7D9-wTE2QlK3na42cPXfW9My8GxF5wehA&oe=69CA5494" alt="Nguyen Duc Kien">
+          <div class="floating-card card-1">
+            <div class="icon blue"><i class="fab fa-flutter"></i></div>
+            <div>
+              <div style="font-weight:700; font-size:0.9rem;">Flutter</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">2+ Years</div>
+            </div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="icon cyan"><i class="fas fa-mobile-alt"></i></div>
+            <div>
+              <div style="font-weight:700; font-size:0.9rem;">Published</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">App Store & Play</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT / SUMMARY ========== -->
+    <section class="section" id="about">
+      <div class="section-header reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Summary</h2>
+      </div>
+      <div class="about-card reveal reveal-delay-1">
+        <p class="about-text">
+          Mobile Developer with almost <strong>2 years of experience</strong> in Flutter and cross-platform app
+          development.
+          Published apps on <strong>App Store</strong> and <strong>Google Play</strong>, passionate about building
+          high-performance and scalable applications. Experienced in Clean Architecture, Bloc/Cubit state management,
+          Firebase integration, and working closely with UI/UX designers to deliver pixel-perfect interfaces.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Published Apps</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Team Projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section" id="skills">
+      <div class="section-header reveal">
+        <div class="section-label">My Toolkit</div>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-icon lang"><i class="fas fa-code"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">Golang</span>
+          </div>
+        </div>
+        <!-- Frameworks -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-icon framework"><i class="fas fa-layer-group"></i></div>
+          <h3>Frameworks / Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Bloc / Cubit</span>
+            <span class="skill-tag">Clean Architecture</span>
+            <span class="skill-tag">Micro Frontend</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Restful APIs</span>
+            <span class="skill-tag">Gorm & Gin</span>
+            <span class="skill-tag">GoFrame</span>
+            <span class="skill-tag">Node.js (Basic)</span>
+          </div>
+        </div>
+        <!-- Databases -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-icon database"><i class="fas fa-database"></i></div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Firestore</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Hive</span>
+          </div>
+        </div>
+        <!-- CI/CD -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-icon cicd"><i class="fas fa-rocket"></i></div>
+          <h3>CI / CD</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Sonarcloud</span>
+            <span class="skill-tag">Docker (Basic)</span>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-icon soft"><i class="fas fa-users"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Time Management</span>
+            <span class="skill-tag">Team Collaboration</span>
+          </div>
+        </div>
+        <!-- Tools -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-icon other"><i class="fas fa-tools"></i></div>
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Xcode</span>
+            <span class="skill-tag">DevTools</span>
+            <span class="skill-tag">Postman</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== OTHER HIGHLIGHTS ========== -->
+    <section class="section" id="highlights">
+      <div class="section-header reveal">
+        <div class="section-label">Highlights</div>
+        <h2 class="section-title">Other Qualifications</h2>
+      </div>
+      <div class="highlights-list">
+        <div class="highlight-item reveal reveal-delay-1">
+          <div class="highlight-icon"><i class="fas fa-brain"></i></div>
+          <p class="highlight-text">Strong understanding of Object-Oriented Programming (OOP), Clean Architecture, Micro
+            Frontend and common Design Patterns.</p>
+        </div>
+        <div class="highlight-item reveal reveal-delay-2">
+          <div class="highlight-icon"><i class="fab fa-github"></i></div>
+          <p class="highlight-text">Proficient in using GitHub throughout the software development lifecycle.</p>
+        </div>
+        <div class="highlight-item reveal reveal-delay-1">
+          <div class="highlight-icon"><i class="fas fa-fire"></i></div>
+          <p class="highlight-text">Experienced in implementing and integrating Firebase services such as
+            Authentication, Cloud Firestore, Realtime Database, Cloud Storage and Push Notifications on both Android and
+            iOS platforms.</p>
+        </div>
+        <div class="highlight-item reveal reveal-delay-2">
+          <div class="highlight-icon"><i class="fas fa-mobile-alt"></i></div>
+          <p class="highlight-text">Deployed builds for testing via Google Play Console and App Store Connect.</p>
+        </div>
+        <div class="highlight-item reveal reveal-delay-1">
+          <div class="highlight-icon"><i class="fas fa-paint-brush"></i></div>
+          <p class="highlight-text">Worked closely with UI/UX designers to precisely implement user interfaces down to
+            the pixel.</p>
+        </div>
+        <div class="highlight-item reveal reveal-delay-2">
+          <div class="highlight-icon"><i class="fas fa-puzzle-piece"></i></div>
+          <p class="highlight-text">Successfully integrated various third-party libraries and services including
+            OneSignal, Gemini, Stripe, Agora, etc., to enhance application functionality and performance.</p>
+        </div>
+        <div class="highlight-item reveal reveal-delay-1">
+          <div class="highlight-icon"><i class="fas fa-bolt"></i></div>
+          <p class="highlight-text">Knowledgeable in data caching strategies to optimize app performance and user
+            experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="section" id="experience">
+      <div class="section-header reveal">
+        <div class="section-label">Career Path</div>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- MultiMe -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="experience-header-left">
+                <div class="company-name">StrongBodyVN</div>
+                <h3 class="experience-title">Junior Mobile Developer - Mobile Team Lead (Flutter)</h3>
+                <div class="experience-period">
+                  <i class="far fa-calendar-alt"></i> 01/2025 – Present
+                </div>
+              </div>
+            </div>
+            <div class="project-name">📱 Project: MultiMe (06/2024 – Present)</div>
+            <a class="project-link" href="https://apps.apple.com/app/multime-ai/id6748796219" target="_blank">
+              <i class="fab fa-app-store-ios"></i> View on App Store
+            </a>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.multime.app.prod"
+              target="_blank">
+              <i class="fab fa-google-play"></i> View on Google Play
+            </a>
+            <p class="project-description">
+              The MultiMe AI app is a comprehensive Super App focused on health, shopping, and social networking.
+              It offers a flexible and convenient experience, helping users easily track, improve, and maintain a
+              healthy lifestyle, shop, date, and connect for work.
+            </p>
+            <div class="responsibilities">
+              <h4>Responsibilities:</h4>
+              <ul>
+                <li>Built project base and provided onboarding guidance for new developers.</li>
+                <li>Implemented application features based on UI designs from Figma.</li>
+                <li>Integrated APIs for core modules such as Strongbody.ai and Marketplace.</li>
+                <li>Integrated third-party services including OneSignal for notifications, Stripe for payments, and
+                  Google Maps.</li>
+                <li>Managed the project's GitHub repository.</li>
+              </ul>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Golang</span>
+              <span class="tech-tag">GoFrame</span>
+              <span class="tech-tag">Bloc</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <div class="team-size"><i class="fas fa-users"></i> Team size: 6</div>
+          </div>
+        </div>
+
+        <!-- HyperApp -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="experience-header-left">
+                <div class="company-name">Group Project</div>
+                <h3 class="experience-title">Mobile Team Lead (Flutter)</h3>
+                <div class="experience-period">
+                  <i class="far fa-calendar-alt"></i> 02/2025 – 06/2025
+                </div>
+              </div>
+            </div>
+            <div class="project-name">🛒 Project: HyperApp</div>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.hypertech.ecommerce"
+              target="_blank">
+              <i class="fab fa-google-play"></i> View on Google Play
+            </a>
+            <p class="project-description">
+              The HYPERTECH app is an e-commerce platform offering convenient solutions with smart search,
+              product reviews, multiple payment options, and an attractive UI.
+            </p>
+            <div class="responsibilities">
+              <h4>Responsibilities:</h4>
+              <ul>
+                <li>Built the base for team management and task assignment to evaluate performance.</li>
+                <li>Integrated APIs using Dio, ensuring compliance with established architectural standards.</li>
+                <li>Developed and built user interfaces (UI).</li>
+                <li>Integrated Agora Livestream and Gemini AI chat.</li>
+                <li>Maintained clear and clean code structure, with Bloc separating business logic from UI.</li>
+              </ul>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Bloc</span>
+              <span class="tech-tag">Clean Architecture</span>
+            </div>
+            <div class="team-size"><i class="fas fa-users"></i> Team size: 6</div>
+          </div>
+        </div>
+
+        <!-- FirstAid -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="experience-header-left">
+                <div class="company-name">Solo Project</div>
+                <h3 class="experience-title">Solo Mobile Developer</h3>
+                <div class="experience-period">
+                  <i class="far fa-calendar-alt"></i> 09/2025
+                </div>
+              </div>
+            </div>
+            <div class="project-name">🏥 Project: FirstAid Manual – Offline Guide</div>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.duckien_dev.firstaid_pro"
+              target="_blank">
+              <i class="fab fa-google-play"></i> View on Google Play
+            </a>
+            <p class="project-description">
+              Cap Cuu Pro – An emergency first aid support app right at your fingertips!
+              In dangerous situations, every second counts. Cap Cuu Pro provides detailed, easy-to-follow, and quick
+              first aid instructions, helping users handle unexpected incidents in life more effectively.
+            </p>
+            <div class="responsibilities">
+              <h4>Responsibilities:</h4>
+              <ul>
+                <li>Participated in project development with features such as integrating shop information APIs with
+                  Firebase.</li>
+                <li>Managed the project's GitHub repository.</li>
+                <li>Configure native application functionality.</li>
+              </ul>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Bloc</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fake Call PR -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="experience-header-left">
+                <div class="company-name">Personal Project</div>
+                <h3 class="experience-title">Mobile Team Lead (Flutter)</h3>
+                <div class="experience-period">
+                  <i class="far fa-calendar-alt"></i> 01/2026
+                </div>
+              </div>
+            </div>
+            <div class="project-name">📞 Project: Fake Call PR</div>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.fake_call_pro.hyper"
+              target="_blank">
+              <i class="fab fa-google-play"></i> View on Google Play
+            </a>
+            <p class="project-description">
+              Fake Call is here to help! This innovative app lets you schedule fake incoming
+              calls with customizable names, phone numbers, and schedules.
+            </p>
+            <div class="responsibilities">
+              <h4>Responsibilities:</h4>
+              <ul>
+                <li>Participated in project development with features such as integrating shop information APIs with
+                  Firebase.</li>
+                <li>Managed the project's GitHub repository.</li>
+                <li>Configure native application functionality.</li>
+              </ul>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Bloc</span>
+            </div>
+            <div class="team-size"><i class="fas fa-users"></i> Team size: 3</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="section" id="education">
+      <div class="section-header reveal">
+        <div class="section-label">Background</div>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-card reveal reveal-delay-1">
+        <div class="edu-header">
+          <h3 class="edu-degree">Bachelor of Software Engineering</h3>
+          <span class="edu-year">2021 – 2025</span>
+        </div>
+        <p class="edu-school">Hanoi University of Business and Technology</p>
+        <p class="edu-gpa">GPA: 2.8</p>
+        <ul class="edu-details">
+          <li><strong>Self-study:</strong> Completed Flutter Development Bootcamp (Udemy) – 1 year of hands-on
+            experience in mobile app development, state management, and widget optimization.</li>
+          <li>Developed Stridex Store App & Admin Panel.</li>
+          <li>GitHub: <a href="https://github.com/DuckienDev/MyApp/tree/main/Shop/stridex_store"
+              target="_blank">DuckienDev/MyApp/Shop/stridex_store</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="main-container">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://github.com/DuckienDev" target="_blank" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:nguyenkiendy2003@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+84368665035" class="social-link" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+        <p class="footer-text">
+          Built with <span class="heart">♥</span> by Nguyen Duc Kien · 2026
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+    // ========== PARTICLE ANIMATION ==========
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let mouse = { x: null, y: null };
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = (Math.random() - 0.5) * 0.5;
+        this.speedY = (Math.random() - 0.5) * 0.5;
+        this.opacity = Math.random() * 0.5 + 0.1;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(148, 163, 184, ${this.opacity})`;
+        ctx.fill();
+      }
+    }
+
+    function initParticles() {
+      particles = [];
+      const count = Math.min(80, Math.floor((canvas.width * canvas.height) / 15000));
+      for (let i = 0; i < count; i++) {
+        particles.push(new Particle());
+      }
+    }
+    initParticles();
+
+    function connectParticles() {
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(148, 163, 184, ${0.08 * (1 - dist / 120)})`;
+            ctx.lineWidth = 0.5;
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      connectParticles();
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // ========== SCROLL REVEAL ==========
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ========== SCROLL PROGRESS ==========
+    const scrollProgress = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      scrollProgress.style.width = scrollPercent + '%';
+    });
+
+    // ========== NAVBAR SCROLL ==========
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // ========== ACTIVE NAV LINK ==========
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // ========== MOBILE MENU ==========
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinksEl = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      navLinksEl.classList.toggle('active');
+    });
+
+    navLinksEl.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinksEl.classList.remove('active');
+      });
+    });
+
+    // ========== BACK TO TOP ==========
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ========== SMOOTH SCROLL ==========
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ========== COUNTER ANIMATION ==========
+    const counters = document.querySelectorAll('.stat-number');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const text = el.textContent;
+          const match = text.match(/(\d+)/);
+          if (match) {
+            const target = parseInt(match[1]);
+            const suffix = text.replace(match[1], '');
+            let count = 0;
+            const increment = target / 30;
+            const timer = setInterval(() => {
+              count += increment;
+              if (count >= target) {
+                count = target;
+                clearInterval(timer);
+              }
+              el.textContent = Math.floor(count) + suffix;
+            }, 50);
+          }
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+  </script>
+
 </body>
+
 </html>
